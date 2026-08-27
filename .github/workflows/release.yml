@@ -161,7 +161,10 @@ jobs:
               DOWNLOAD_URL="https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/${i}.dat"
               FILE_NAME="${i}.dat"
               echo -e "Downloading ${DOWNLOAD_URL}..."
-              curl -L "${DOWNLOAD_URL}" -o ./build_assets/${FILE_NAME}
+              curl --fail --location --silent --show-error \
+                --retry 5 --retry-all-errors --retry-delay 2 --connect-timeout 15 \
+                "${DOWNLOAD_URL}" --output "./build_assets/${FILE_NAME}"
+              test -s "./build_assets/${FILE_NAME}"
             done
       - name: Create ZIP archive
         shell: bash

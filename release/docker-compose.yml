@@ -1,0 +1,13 @@
+services:
+  xrayr:
+    image: ghcr.io/sinalphabeta/xrayr:latest
+    container_name: xrayr
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./config/config.yml:/etc/XrayR/config.yml:ro
+      - ./config/dns.json:/etc/XrayR/dns.json:ro
+      - ./config/route.json:/etc/XrayR/route.json:ro
+      - ./config/custom_inbound.json:/etc/XrayR/custom_inbound.json:ro
+      - ./config/custom_outbound.json:/etc/XrayR/custom_outbound.json:ro
+      - ./config/rulelist:/etc/XrayR/rulelist:ro

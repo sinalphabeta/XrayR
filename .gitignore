@@ -13,9 +13,12 @@ go.work
 main
 XrayR
 XrayR*
+!/script/xrayr.sh
 access.log
 error.log
 .lego
 cert
 config.yml
+/release/config/geoip.dat
+/release/config/geosite.dat
 updateR.sh

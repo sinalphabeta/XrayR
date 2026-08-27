@@ -70,8 +70,8 @@ This project is just my personal learning and development and maintenance. I do 
 
 ### 1-Click installation
 
-```
-wget -N https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh && bash install.sh
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/sinalphabeta/XrayR/main/script/install.sh)
 ```
 
 
@@ -103,5 +103,4 @@ wget -N https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.s
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/wyx2685/XrayR.svg)](https://starchart.cc/wyx2685/XrayR)
-
 

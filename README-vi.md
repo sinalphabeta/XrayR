@@ -67,8 +67,8 @@ Dự án này chỉ là học tập và phát triển và bảo trì cá nhân c
 
 ### Một cài đặt chính
 
-```
-wget -N https://raw.githubusercontent.com/wyx2685/XrayR-release/master/install.sh && bash install.sh
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/sinalphabeta/XrayR/main/script/install.sh)
 ```
 
 
